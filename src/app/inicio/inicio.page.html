@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-badge color="primary">{{id}}</ion-badge>
+       <ion-list>
+          <ion-item>
+            <ion-label color="secondary" stacked>Nombre</ion-label>     
+            <ion-input [(ngModel)]="nombre" ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="secondary" stacked>Apellido</ion-label> 
+            <ion-input [(ngModel)]="apellido"></ion-input>
+          </ion-item>
+      </ion-list>
+
+      <ion-button color="secondary" (click)="irALogin()">Ir a Login</ion-button>
+
+</ion-content>
